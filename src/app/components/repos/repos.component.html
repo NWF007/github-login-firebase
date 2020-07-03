@@ -1,0 +1,10 @@
+<div *ngFor="let repo of repos | paginate: { itemsPerPage: 8, currentPage: p }" class="list-group">
+  <a
+    [href]="repo.html_url"
+    target="_blank"
+    class="list-group-item list-group-item-action"
+  >
+    {{ repo.name }} <span class="float-right">{{repo.updated_at | date}} </span>
+  </a>
+</div>
+<pagination-controls class="pagination" (pageChange)="p = $event"></pagination-controls>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "github-login-68323": {
+      "hosting": {
+        "github-login-firebase": [
+          "github-login-68323"
+        ]
+      }
+    }
+  }
+}
